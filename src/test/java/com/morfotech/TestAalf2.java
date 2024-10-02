@@ -216,5 +216,4 @@ public class TestAalf2 {
         cardOverdueDeadlineTask.click();
         Thread.sleep(2000);
     }
-
 }
