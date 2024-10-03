@@ -225,7 +225,7 @@ public class TestAalf1 {
         Thread.sleep(2000);
 
         //Proceed Overdue Deadline Task Dashboard HO
-        MobileElement cardOverdueDeadlineTask = driver1.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View/android.widget.TextView[1]"));
+        MobileElement cardOverdueDeadlineTask = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/cardOverdue0"));
         cardOverdueDeadlineTask.click();
         Thread.sleep(2000);
 
@@ -233,11 +233,11 @@ public class TestAalf1 {
         dateStartDateProceedTheTaskOverdue.click();
         Thread.sleep(2000);
 
-        MobileElement selectDateStartDateProceedTheTaskOverdue = driver1.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[2]/android.view.View[11]/android.widget.TextView[25]/android.widget.Button"));
+        MobileElement selectDateStartDateProceedTheTaskOverdue = driver1.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[3]/android.view.View[11]/android.widget.TextView[24]/android.widget.Button"));
         selectDateStartDateProceedTheTaskOverdue.click();
         Thread.sleep(2000);
 
-        MobileElement buttonConfirmDateStartDateProceedTheTaskOverdue = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/TextButtonOK"));
+        MobileElement buttonConfirmDateStartDateProceedTheTaskOverdue = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/tbOK"));
         buttonConfirmDateStartDateProceedTheTaskOverdue.click();
         Thread.sleep(2000);
 
@@ -253,23 +253,23 @@ public class TestAalf1 {
         selectMinuteTimeStartDateProceedTheTaskOverdue.click();
         Thread.sleep(2000);
 
-        MobileElement buttonConfirmTimeStartDateProceedTheTaskOverdue = driver1.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[4]/android.widget.Button"));
+        MobileElement buttonConfirmTimeStartDateProceedTheTaskOverdue = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/tbOK"));
         buttonConfirmTimeStartDateProceedTheTaskOverdue.click();
         Thread.sleep(2000);
 
-        MobileElement dateEndDateProceedTheTaskOverdue = driver1.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.ScrollView/android.widget.EditText[3]"));
+        MobileElement dateEndDateProceedTheTaskOverdue = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/tfDateEnd"));
         dateEndDateProceedTheTaskOverdue.click();
         Thread.sleep(2000);
 
-        MobileElement selectDateEndDateProceedTheTaskOverdue = driver1.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[2]/android.view.View[11]/android.widget.TextView[28]/android.widget.Button"));
+        MobileElement selectDateEndDateProceedTheTaskOverdue = driver1.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[3]/android.view.View[11]/android.widget.TextView[25]/android.widget.Button"));
         selectDateEndDateProceedTheTaskOverdue.click();
         Thread.sleep(2000);
 
-        MobileElement buttonConfirmDateEndDateProceedTheTaskOverdue = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/TextButtonOK"));
+        MobileElement buttonConfirmDateEndDateProceedTheTaskOverdue = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/tbOK"));
         buttonConfirmDateEndDateProceedTheTaskOverdue.click();
         Thread.sleep(2000);
 
-        MobileElement timeEndDateProceedTheTaskOverdue = driver1.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.ScrollView/android.widget.EditText[4]"));
+        MobileElement timeEndDateProceedTheTaskOverdue = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/tfTimeEnd"));
         timeEndDateProceedTheTaskOverdue.click();
         Thread.sleep(2000);
 
@@ -320,12 +320,53 @@ public class TestAalf1 {
         selectDocumentUploadDocumentReportProceedTheTaskOverdue.click();
         Thread.sleep(2000);
 
-        MobileElement buttonSubmitProceedTheTaskOverdue = driver1.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[3]/android.widget.Button"));
+        MobileElement buttonSubmitProceedTheTaskOverdue = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/btSubmit"));
         buttonSubmitProceedTheTaskOverdue.click();
         Thread.sleep(2000);
 
         MobileElement buttonConfirmCompleteTaskOverdue = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/btOk"));
         buttonConfirmCompleteTaskOverdue.click();
+        Thread.sleep(2000);
+
+        MobileElement buttonOkCompleteTaskOverdue = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/btOk"));
+        buttonOkCompleteTaskOverdue.click();
+        Thread.sleep(2000);
+
+        //Create HO
+        MobileElement buttonBackListOverdue = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/imgBack"));
+        buttonBackListOverdue.click();
+        Thread.sleep(2000);
+
+        MobileElement tabHo = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/viewHO"));
+        tabHo.click();
+        Thread.sleep(2000);
+
+        MobileElement buttonCreateHo = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/btCreateHO"));
+        buttonCreateHo.click();
+        Thread.sleep(2000);
+
+        MobileElement buttonAddHandlingCompany = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/viewSheetCompany"));
+        buttonAddHandlingCompany.click();
+        Thread.sleep(2000);
+
+        MobileElement selectHandlingCompany = driver1.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View[1]/android.view.View"));
+        selectHandlingCompany.click();
+        Thread.sleep(2000);
+
+        MobileElement buttonUploadDocumentQuotation = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/viewDocumentQuotation"));
+        buttonUploadDocumentQuotation.click();
+        Thread.sleep(2000);
+
+        MobileElement selectDocumentUploadDocumentQuotation = driver1.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.widget.ScrollView/android.widget.FrameLayout/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.view.ViewGroup/android.widget.GridView/android.widget.LinearLayout[3]/android.widget.LinearLayout/android.widget.LinearLayout"));
+        selectDocumentUploadDocumentQuotation.click();
+        Thread.sleep(2000);
+
+        MobileElement buttonUploadDocumentConfirmationLetter = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/viewDocumentConfirmation"));
+        buttonUploadDocumentConfirmationLetter.click();
+        Thread.sleep(2000);
+
+        MobileElement selectDocumentUploadDocumentConfirmationLetter = driver1.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.widget.ScrollView/android.widget.FrameLayout/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.view.ViewGroup/android.widget.GridView/android.widget.LinearLayout[3]/android.widget.LinearLayout/android.widget.LinearLayout"));
+        selectDocumentUploadDocumentConfirmationLetter.click();
         Thread.sleep(2000);
     }
 }
