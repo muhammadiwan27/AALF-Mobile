@@ -47,15 +47,15 @@ public class TestAalf2 {
         Thread.sleep(2000);
 
         //Login invalid
-        MobileElement navbarOther = driver2.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View[5]/android.widget.TextView");
+        MobileElement navbarOther = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/viewOther"));
         navbarOther.click();
         Thread.sleep(2000);
 
-        MobileElement buttonLogout = driver2.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[2]/android.view.View[2]/android.widget.Button");
+        MobileElement buttonLogout = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/btLogout"));
         buttonLogout.click();
         Thread.sleep(2000);
 
-        MobileElement buttonConfirmLogout = driver2.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.Button");
+        MobileElement buttonConfirmLogout = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/btOk"));
         buttonConfirmLogout.click();
         Thread.sleep(2000);
 
@@ -95,7 +95,7 @@ public class TestAalf2 {
         Thread.sleep(2000);
 
         //Tab HO On Progress Dashboard HO
-        MobileElement buttonBackListTotalHo = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/txtTitle"));
+        MobileElement buttonBackListTotalHo = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/imgBack"));
         buttonBackListTotalHo.click();
         Thread.sleep(2000);
 
@@ -104,7 +104,7 @@ public class TestAalf2 {
         Thread.sleep(2000);
 
         //Tab HO Completed Dashboard HO
-        MobileElement buttonBackListOnProgressHo = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/txtTitle"));
+        MobileElement buttonBackListOnProgressHo = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/imgBack"));
         buttonBackListOnProgressHo.click();
         Thread.sleep(2000);
 
@@ -113,7 +113,7 @@ public class TestAalf2 {
         Thread.sleep(2000);
 
         //Tab Total Task Dashboard HO
-        MobileElement buttonBackListCompletedHo = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/txtTitle"));
+        MobileElement buttonBackListCompletedHo = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/imgBack"));
         buttonBackListCompletedHo.click();
         Thread.sleep(2000);
 
@@ -122,7 +122,7 @@ public class TestAalf2 {
         Thread.sleep(2000);
 
         //Tab Task Has Not Proceeded Dashboard HO
-        MobileElement buttonBackListTotalTask = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/txtTitle"));
+        MobileElement buttonBackListTotalTask = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/imgBack"));
         buttonBackListTotalTask.click();
         Thread.sleep(2000);
 
@@ -131,7 +131,7 @@ public class TestAalf2 {
         Thread.sleep(2000);
 
         //Tab Task Need Approval JP Dashboard HO
-        MobileElement buttonBackListNotProceededTask = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/txtTitle"));
+        MobileElement buttonBackListNotProceededTask = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/imgBack"));
         buttonBackListNotProceededTask.click();
         Thread.sleep(2000);
 
@@ -140,7 +140,7 @@ public class TestAalf2 {
         Thread.sleep(2000);
 
         //Tab Task Need Approval Partner Dashboard HO
-        MobileElement buttonBackListNeedApprovalJpTask = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/txtTitle"));
+        MobileElement buttonBackListNeedApprovalJpTask = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/imgBack"));
         buttonBackListNeedApprovalJpTask.click();
         Thread.sleep(2000);
 
@@ -149,7 +149,7 @@ public class TestAalf2 {
         Thread.sleep(2000);
 
         //Tab Task Finished Dashboard HO
-        MobileElement buttonBackListNeedApprovalPartnerTask = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/txtTitle"));
+        MobileElement buttonBackListNeedApprovalPartnerTask = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/imgBack"));
         buttonBackListNeedApprovalPartnerTask.click();
         Thread.sleep(2000);
 
@@ -158,7 +158,7 @@ public class TestAalf2 {
         Thread.sleep(2000);
 
         //Tab Total Activity Dashboard HO
-        MobileElement buttonBackListFinishedTask = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/txtTitle"));
+        MobileElement buttonBackListFinishedTask = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/imgBack"));
         buttonBackListFinishedTask.click();
         Thread.sleep(2000);
 
@@ -167,7 +167,7 @@ public class TestAalf2 {
         Thread.sleep(2000);
 
         //Tab Activity Need Revision Dashboard HO
-        MobileElement buttonBackListTotalActivity = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/txtTitle"));
+        MobileElement buttonBackListTotalActivity = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/imgBack"));
         buttonBackListTotalActivity.click();
         Thread.sleep(2000);
 
@@ -176,7 +176,7 @@ public class TestAalf2 {
         Thread.sleep(2000);
 
         //Tab Activity Need Approval JP Dashboard HO
-        MobileElement buttonBackListNeedRevisionActivity = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/txtTitle"));
+        MobileElement buttonBackListNeedRevisionActivity = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/imgBack"));
         buttonBackListNeedRevisionActivity.click();
         Thread.sleep(2000);
 
@@ -185,7 +185,7 @@ public class TestAalf2 {
         Thread.sleep(2000);
 
         //Tab Activity Need Approval Partner Dashboard HO
-        MobileElement buttonBackListNeedApprovalJpActivity = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/txtTitle"));
+        MobileElement buttonBackListNeedApprovalJpActivity = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/imgBack"));
         buttonBackListNeedApprovalJpActivity.click();
         Thread.sleep(2000);
 
@@ -194,7 +194,7 @@ public class TestAalf2 {
         Thread.sleep(2000);
 
         //Tab Activity Finished Dashboard HO
-        MobileElement buttonBackListNeedApprovalPartnerActivity = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/txtTitle"));
+        MobileElement buttonBackListNeedApprovalPartnerActivity = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/imgBack"));
         buttonBackListNeedApprovalPartnerActivity.click();
         Thread.sleep(2000);
 
@@ -203,17 +203,8 @@ public class TestAalf2 {
         Thread.sleep(2000);
 
         //List Overdue Deadline Task Dashboard HO
-        MobileElement buttonBackListFinishedActivity = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/txtTitle"));
+        MobileElement buttonBackListFinishedActivity = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/imgBack"));
         buttonBackListFinishedActivity.click();
-        Thread.sleep(2000);
-
-        MobileElement listOverdueDeadline = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/txtSeeAllOverdue"));
-        listOverdueDeadline.click();
-        Thread.sleep(2000);
-
-        //Proceed Overdue Deadline Task Dashboard HO
-        MobileElement cardOverdueDeadlineTask = driver2.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View/android.widget.TextView[1]"));
-        cardOverdueDeadlineTask.click();
         Thread.sleep(2000);
     }
 }
