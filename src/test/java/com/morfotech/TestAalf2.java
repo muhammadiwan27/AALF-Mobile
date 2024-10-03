@@ -2,7 +2,10 @@ package com.morfotech;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.touch.WaitOptions;
+import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.BeforeMethod;
@@ -10,6 +13,7 @@ import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.time.Duration;
 
 public class TestAalf2 {
 
@@ -205,6 +209,17 @@ public class TestAalf2 {
         //List Overdue Deadline Task Dashboard HO
         MobileElement buttonBackListFinishedActivity = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/imgBack"));
         buttonBackListFinishedActivity.click();
+        Thread.sleep(2000);
+
+        var action = new TouchAction(driver2);
+        action.press(PointOption.point(500, 1500))
+                .waitAction(WaitOptions.waitOptions(Duration.ofMillis(1000)))
+                .moveTo(PointOption.point(500, 300))
+                .release()
+                .perform();
+
+        MobileElement listOverdueDeadline = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/txtSeeAllOverdue"));
+        listOverdueDeadline.click();
         Thread.sleep(2000);
     }
 }
