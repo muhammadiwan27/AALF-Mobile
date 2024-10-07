@@ -339,5 +339,117 @@ public class TestAalf2 {
         MobileElement buttonOkCompleteTaskOverdue = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/btOk"));
         buttonOkCompleteTaskOverdue.click();
         Thread.sleep(2000);
+        
+        //Create HO
+        MobileElement buttonBackListOverdue = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/imgBack"));
+        buttonBackListOverdue.click();
+        Thread.sleep(2000);
+
+        MobileElement tabHo = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/viewHO"));
+        tabHo.click();
+        Thread.sleep(2000);
+
+        MobileElement buttonCreateHo = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/btCreateHO"));
+        buttonCreateHo.click();
+        Thread.sleep(2000);
+
+        MobileElement buttonAddHandlingCompany = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/viewSheetCompany"));
+        buttonAddHandlingCompany.click();
+        Thread.sleep(2000);
+
+        MobileElement selectHandlingCompany = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/cardCompany1"));
+        selectHandlingCompany.click();
+        Thread.sleep(2000);
+
+        MobileElement buttonUploadDocumentQuotation = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/viewDocumentQuotation"));
+        buttonUploadDocumentQuotation.click();
+        Thread.sleep(2000);
+
+        MobileElement selectDocumentUploadDocumentQuotation = driver2.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.widget.ScrollView/android.widget.FrameLayout/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.view.ViewGroup/android.widget.GridView/android.widget.LinearLayout[3]/android.widget.LinearLayout/android.widget.LinearLayout"));
+        selectDocumentUploadDocumentQuotation.click();
+        Thread.sleep(2000);
+
+        MobileElement buttonUploadDocumentConfirmationLetter = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/viewDocumentConfirmation"));
+        buttonUploadDocumentConfirmationLetter.click();
+        Thread.sleep(2000);
+
+        MobileElement selectDocumentUploadDocumentConfirmationLetter = driver2.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.widget.ScrollView/android.widget.FrameLayout/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.view.ViewGroup/android.widget.GridView/android.widget.LinearLayout[3]/android.widget.LinearLayout/android.widget.LinearLayout"));
+        selectDocumentUploadDocumentConfirmationLetter.click();
+        Thread.sleep(2000);
+
+        MobileElement buttonAddNameOfClient = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/cardClient1"));
+        buttonAddNameOfClient.click();
+        Thread.sleep(2000);
+
+        MobileElement inputCaseName = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/tfCaseName"));
+        inputCaseName.sendKeys("Pengetesan Automation mobile");
+        Thread.sleep(2000);
+
+        MobileElement chooseTypeOfClient = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/"));
+        chooseTypeOfClient.click();
+        Thread.sleep(2000);
+
+        MobileElement selectTypeOfClient = driver2.findElement(By.xpath("/hierarchy/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[4]"));
+        selectTypeOfClient.click();
+        Thread.sleep(2000);
+
+        var action5 = new TouchAction(driver2);
+        action5.press(PointOption.point(500, 1500))
+                .waitAction(WaitOptions.waitOptions(Duration.ofMillis(1000)))
+                .moveTo(PointOption.point(500, 300))
+                .release()
+                .perform();
+
+        MobileElement inputTotalHours = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/tfTotalHours"));
+        inputTotalHours.sendKeys("35");
+        Thread.sleep(2000);
+
+        MobileElement startPeriodDateCreateHo = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/tfDateStart"));
+        startPeriodDateCreateHo.click();
+        Thread.sleep(2000);
+
+        MobileElement selectStartPeriodDateCreateHo = driver2.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[3]/android.view.View[11]/android.widget.TextView[2]/android.widget.Button"));
+        selectStartPeriodDateCreateHo.click();
+        Thread.sleep(2000);
+
+        MobileElement buttonConfirmDateStartPeriodDateCreateHo = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/tbOK"));
+        buttonConfirmDateStartPeriodDateCreateHo.click();
+        Thread.sleep(2000);
+
+        MobileElement endPeriodDateCreateHo = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/tfDateEnd"));
+        endPeriodDateCreateHo.click();
+        Thread.sleep(2000);
+
+        MobileElement selectEndPeriodDateCreateHo = driver2.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[3]/android.view.View[11]/android.widget.TextView[23]/android.widget.Button"));
+        selectEndPeriodDateCreateHo.click();
+        Thread.sleep(2000);
+
+        MobileElement buttonConfirmDateEndPeriodDateCreateHo = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/tbOK"));
+        buttonConfirmDateEndPeriodDateCreateHo.click();
+        Thread.sleep(2000);
+
+        MobileElement buttonAddNameOfTeam = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/viewSheetTeam"));
+        buttonAddNameOfTeam.click();
+        Thread.sleep(2000);
+
+        MobileElement selectNameOfTeam1 = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/cardTeamHO2"));
+        selectNameOfTeam1.click();
+        Thread.sleep(2000);
+
+        MobileElement selectNameOfTeam2 = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/cardTeamHO3"));
+        selectNameOfTeam2.click();
+        Thread.sleep(2000);
+
+        MobileElement buttonSelectTeamCreateHo = driver2.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]/android.widget.Button"));
+        buttonSelectTeamCreateHo.click();
+        Thread.sleep(2000);
+
+        MobileElement buttonSaveCreateHo = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/btSave"));
+        buttonSaveCreateHo.click();
+        Thread.sleep(2000);
+
+        MobileElement buttonConfirmSaveCreateHo = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/btOk"));
+        buttonConfirmSaveCreateHo.click();
+        Thread.sleep(2000);
     }
 }

@@ -363,7 +363,7 @@ public class TestAalf1 {
         buttonAddHandlingCompany.click();
         Thread.sleep(2000);
 
-        MobileElement selectHandlingCompany = driver1.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View[1]/android.view.View"));
+        MobileElement selectHandlingCompany = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/cardCompany0"));
         selectHandlingCompany.click();
         Thread.sleep(2000);
 
@@ -422,7 +422,7 @@ public class TestAalf1 {
         buttonConfirmDateStartPeriodDateCreateHo.click();
         Thread.sleep(2000);
 
-        MobileElement endPeriodDateCreateHo = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/tfDateStart"));
+        MobileElement endPeriodDateCreateHo = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/tfDateEnd"));
         endPeriodDateCreateHo.click();
         Thread.sleep(2000);
 
@@ -444,6 +444,10 @@ public class TestAalf1 {
 
         MobileElement selectNameOfTeam2 = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/cardTeamHO2"));
         selectNameOfTeam2.click();
+        Thread.sleep(2000);
+
+        MobileElement buttonSelectTeamCreateHo = driver1.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]/android.widget.Button"));
+        buttonSelectTeamCreateHo.click();
         Thread.sleep(2000);
 
         MobileElement buttonSaveCreateHo = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/btSave"));
