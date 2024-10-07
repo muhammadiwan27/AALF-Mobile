@@ -224,8 +224,22 @@ public class TestAalf1 {
         listOverdueDeadline.click();
         Thread.sleep(2000);
 
+        var action1 = new TouchAction(driver1);
+        action1.press(PointOption.point(500, 1500))
+                .waitAction(WaitOptions.waitOptions(Duration.ofMillis(1000)))
+                .moveTo(PointOption.point(500, 10))
+                .release()
+                .perform();
+
+        var action2 = new TouchAction(driver1);
+        action2.press(PointOption.point(500, 1500))
+                .waitAction(WaitOptions.waitOptions(Duration.ofMillis(1000)))
+                .moveTo(PointOption.point(500, 10))
+                .release()
+                .perform();
+
         //Proceed Overdue Deadline Task Dashboard HO
-        MobileElement cardOverdueDeadlineTask = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/cardOverdue0"));
+        MobileElement cardOverdueDeadlineTask = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/cardOverdue5"));
         cardOverdueDeadlineTask.click();
         Thread.sleep(2000);
 
@@ -285,8 +299,8 @@ public class TestAalf1 {
         buttonConfirmTimeEndDateProceedTheTaskOverdue.click();
         Thread.sleep(2000);
 
-        var action1 = new TouchAction(driver1);
-        action1.press(PointOption.point(500, 1500))
+        var action4 = new TouchAction(driver1);
+        action4.press(PointOption.point(500, 1500))
                 .waitAction(WaitOptions.waitOptions(Duration.ofMillis(1000)))
                 .moveTo(PointOption.point(500, 300))
                 .release()
@@ -385,8 +399,8 @@ public class TestAalf1 {
         selectTypeOfClient.click();
         Thread.sleep(2000);
 
-        var action2 = new TouchAction(driver1);
-        action2.press(PointOption.point(500, 1500))
+        var action5 = new TouchAction(driver1);
+        action5.press(PointOption.point(500, 1500))
                 .waitAction(WaitOptions.waitOptions(Duration.ofMillis(1000)))
                 .moveTo(PointOption.point(500, 300))
                 .release()

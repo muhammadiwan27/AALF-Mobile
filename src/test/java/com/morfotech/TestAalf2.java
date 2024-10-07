@@ -23,7 +23,7 @@ public class TestAalf2 {
     public void setup() throws MalformedURLException {
         DesiredCapabilities caps2 = new DesiredCapabilities();
         caps2.setCapability("deviceName", "POCO X5 5G");
-        caps2.setCapability("udid", "192.168.99.43:5656");
+        caps2.setCapability("udid", "192.168.99.7:5656");
         caps2.setCapability("platformName", "android");
         caps2.setCapability("appPackage", "com.morfo.sipandaunik_dev");
         caps2.setCapability("appActivity", "com.morfo.sipandaunik.MainActivity");
@@ -220,6 +220,124 @@ public class TestAalf2 {
 
         MobileElement listOverdueDeadline = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/txtSeeAllOverdue"));
         listOverdueDeadline.click();
+        Thread.sleep(2000);
+
+        var action1 = new TouchAction(driver2);
+        action1.press(PointOption.point(500, 1500))
+                .waitAction(WaitOptions.waitOptions(Duration.ofMillis(1000)))
+                .moveTo(PointOption.point(500, 10))
+                .release()
+                .perform();
+
+        var action2 = new TouchAction(driver2);
+        action2.press(PointOption.point(500, 1500))
+                .waitAction(WaitOptions.waitOptions(Duration.ofMillis(1000)))
+                .moveTo(PointOption.point(500, 10))
+                .release()
+                .perform();
+
+        //Proceed Overdue Deadline Task Dashboard HO
+        MobileElement cardOverdueDeadlineTask = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/cardOverdue6"));
+        cardOverdueDeadlineTask.click();
+        Thread.sleep(2000);
+
+        MobileElement dateStartDateProceedTheTaskOverdue = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/tfDateStart"));
+        dateStartDateProceedTheTaskOverdue.click();
+        Thread.sleep(2000);
+
+        MobileElement selectDateStartDateProceedTheTaskOverdue = driver2.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[3]/android.view.View[11]/android.widget.TextView[24]/android.widget.Button"));
+        selectDateStartDateProceedTheTaskOverdue.click();
+        Thread.sleep(2000);
+
+        MobileElement buttonConfirmDateStartDateProceedTheTaskOverdue = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/tbOK"));
+        buttonConfirmDateStartDateProceedTheTaskOverdue.click();
+        Thread.sleep(2000);
+
+        MobileElement timeStartDateProceedTheTaskOverdue = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/tfTimeStart"));
+        timeStartDateProceedTheTaskOverdue.click();
+        Thread.sleep(2000);
+
+        MobileElement selectHourTimeStartDateProceedTheTaskOverdue = driver2.findElement(By.xpath("//android.view.View[@content-desc=\"11 hours\"]"));
+        selectHourTimeStartDateProceedTheTaskOverdue.click();
+        Thread.sleep(2000);
+
+        MobileElement selectMinuteTimeStartDateProceedTheTaskOverdue = driver2.findElement(By.xpath("//android.view.View[@content-desc=\"15 minutes\"]"));
+        selectMinuteTimeStartDateProceedTheTaskOverdue.click();
+        Thread.sleep(2000);
+
+        MobileElement buttonConfirmTimeStartDateProceedTheTaskOverdue = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/tbOK"));
+        buttonConfirmTimeStartDateProceedTheTaskOverdue.click();
+        Thread.sleep(2000);
+
+        MobileElement dateEndDateProceedTheTaskOverdue = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/tfDateEnd"));
+        dateEndDateProceedTheTaskOverdue.click();
+        Thread.sleep(2000);
+
+        MobileElement selectDateEndDateProceedTheTaskOverdue = driver2.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[3]/android.view.View[11]/android.widget.TextView[25]/android.widget.Button"));
+        selectDateEndDateProceedTheTaskOverdue.click();
+        Thread.sleep(2000);
+
+        MobileElement buttonConfirmDateEndDateProceedTheTaskOverdue = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/tbOK"));
+        buttonConfirmDateEndDateProceedTheTaskOverdue.click();
+        Thread.sleep(2000);
+
+        MobileElement timeEndDateProceedTheTaskOverdue = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/tfTimeEnd"));
+        timeEndDateProceedTheTaskOverdue.click();
+        Thread.sleep(2000);
+
+        MobileElement selectHourTimeEndDateProceedTheTaskOverdue = driver2.findElement(By.xpath("//android.view.View[@content-desc=\"20 hours\"]"));
+        selectHourTimeEndDateProceedTheTaskOverdue.click();
+        Thread.sleep(2000);
+
+        MobileElement selectMinuteTimeEndDateProceedTheTaskOverdue = driver2.findElement(By.xpath("//android.view.View[@content-desc=\"45 minutes\"]"));
+        selectMinuteTimeEndDateProceedTheTaskOverdue.click();
+        Thread.sleep(2000);
+
+        MobileElement buttonConfirmTimeEndDateProceedTheTaskOverdue = driver2.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[4]/android.widget.Button"));
+        buttonConfirmTimeEndDateProceedTheTaskOverdue.click();
+        Thread.sleep(2000);
+
+        var action3 = new TouchAction(driver2);
+        action3.press(PointOption.point(500, 1500))
+                .waitAction(WaitOptions.waitOptions(Duration.ofMillis(1000)))
+                .moveTo(PointOption.point(500, 300))
+                .release()
+                .perform();
+
+        MobileElement buttonUploadPhotoReportProceedTheTaskOverdue = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/btUploadPhoto"));
+        buttonUploadPhotoReportProceedTheTaskOverdue.click();
+        Thread.sleep(2000);
+
+        MobileElement buttonGalleryUploadPhotoReportProceedTheTaskOverdue = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/viewGallery"));
+        buttonGalleryUploadPhotoReportProceedTheTaskOverdue.click();
+        Thread.sleep(2000);
+
+        MobileElement iconGalleryUploadPhotoReportProceedTheTaskOverdue = driver2.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.view.ViewGroup/android.widget.FrameLayout/android.widget.ScrollView/android.widget.LinearLayout/com.android.internal.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.FrameLayout/android.widget.ImageView"));
+        iconGalleryUploadPhotoReportProceedTheTaskOverdue.click();
+        Thread.sleep(2000);
+
+        MobileElement selectPhotoGalleryUploadPhotoReportProceedTheTaskOverdue = driver2.findElement(By.xpath("//android.widget.FrameLayout[@content-desc=\"Photo, October 4, 2024 14:53:41\"]/android.widget.FrameLayout/android.widget.TextView"));
+        selectPhotoGalleryUploadPhotoReportProceedTheTaskOverdue.click();
+        Thread.sleep(2000);
+
+        MobileElement buttonUploadDocumentReportProceedTheTaskOverdue = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/viewUploadDocument"));
+        buttonUploadDocumentReportProceedTheTaskOverdue.click();
+        Thread.sleep(2000);
+
+        MobileElement selectDocumentUploadDocumentReportProceedTheTaskOverdue = driver2.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.widget.ScrollView/android.widget.FrameLayout/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.view.ViewGroup/android.widget.GridView/android.widget.LinearLayout/android.widget.LinearLayout"));
+        selectDocumentUploadDocumentReportProceedTheTaskOverdue.click();
+        Thread.sleep(2000);
+
+        MobileElement buttonSubmitProceedTheTaskOverdue = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/btSubmit"));
+        buttonSubmitProceedTheTaskOverdue.click();
+        Thread.sleep(2000);
+
+        MobileElement buttonConfirmCompleteTaskOverdue = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/btOk"));
+        buttonConfirmCompleteTaskOverdue.click();
+        Thread.sleep(2000);
+
+        MobileElement buttonOkCompleteTaskOverdue = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/btOk"));
+        buttonOkCompleteTaskOverdue.click();
         Thread.sleep(2000);
     }
 }
