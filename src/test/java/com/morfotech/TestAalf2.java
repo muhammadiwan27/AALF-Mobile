@@ -312,11 +312,7 @@ public class TestAalf2 {
         buttonGalleryUploadPhotoReportProceedTheTaskOverdue.click();
         Thread.sleep(2000);
 
-        MobileElement iconGalleryUploadPhotoReportProceedTheTaskOverdue = driver2.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.view.ViewGroup/android.widget.FrameLayout/android.widget.ScrollView/android.widget.LinearLayout/com.android.internal.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.FrameLayout/android.widget.ImageView"));
-        iconGalleryUploadPhotoReportProceedTheTaskOverdue.click();
-        Thread.sleep(2000);
-
-        MobileElement selectPhotoGalleryUploadPhotoReportProceedTheTaskOverdue = driver2.findElement(By.xpath("//android.widget.FrameLayout[@content-desc=\"Photo, October 4, 2024 14:53:41\"]/android.widget.FrameLayout/android.widget.TextView"));
+        MobileElement selectPhotoGalleryUploadPhotoReportProceedTheTaskOverdue = driver2.findElement(By.xpath("//android.widget.FrameLayout[@content-desc=\"Photo, October 4, 2024 14:53:41, Indonesia, Daerah Khusus Ibukota Jakarta\"]/android.widget.FrameLayout/android.widget.TextView"));
         selectPhotoGalleryUploadPhotoReportProceedTheTaskOverdue.click();
         Thread.sleep(2000);
 
@@ -334,8 +330,9 @@ public class TestAalf2 {
 
         MobileElement buttonConfirmCompleteTaskOverdue = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/btOk"));
         buttonConfirmCompleteTaskOverdue.click();
-        Thread.sleep(2000);
+        Thread.sleep(6000);
 
+        Thread.sleep(9000);
         MobileElement buttonOkCompleteTaskOverdue = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/btOk"));
         buttonOkCompleteTaskOverdue.click();
         Thread.sleep(2000);

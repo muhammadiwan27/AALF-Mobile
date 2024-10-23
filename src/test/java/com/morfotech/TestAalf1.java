@@ -6,6 +6,7 @@ import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import io.appium.java_client.MobileElement;
@@ -322,7 +323,7 @@ public class TestAalf1 {
         selectAlbumGalleryUploadPhotoReportProceedTheTaskOverdue.click();
         Thread.sleep(2000);
 
-        MobileElement selectPhotoGalleryUploadPhotoReportProceedTheTaskOverdue = driver1.findElement(By.xpath("(//android.widget.FrameLayout[@content-desc=\"Button\"])[1]/android.widget.FrameLayout[1]/android.widget.ImageView"));
+        MobileElement selectPhotoGalleryUploadPhotoReportProceedTheTaskOverdue = driver1.findElement(By.xpath("(//android.widget.FrameLayout[@content-desc=\"Button\"])[12]/android.widget.FrameLayout[2]"));
         selectPhotoGalleryUploadPhotoReportProceedTheTaskOverdue.click();
         Thread.sleep(2000);
 
@@ -330,7 +331,7 @@ public class TestAalf1 {
         buttonUploadDocumentReportProceedTheTaskOverdue.click();
         Thread.sleep(2000);
 
-        MobileElement selectDocumentUploadDocumentReportProceedTheTaskOverdue = driver1.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.widget.ScrollView/android.widget.FrameLayout/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.view.ViewGroup/android.widget.GridView/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout"));
+        MobileElement selectDocumentUploadDocumentReportProceedTheTaskOverdue = driver1.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.widget.ScrollView/android.widget.FrameLayout/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.view.ViewGroup/android.widget.GridView/android.widget.LinearLayout[2]/android.widget.LinearLayout"));
         selectDocumentUploadDocumentReportProceedTheTaskOverdue.click();
         Thread.sleep(2000);
 
@@ -371,7 +372,7 @@ public class TestAalf1 {
         buttonUploadDocumentQuotation.click();
         Thread.sleep(2000);
 
-        MobileElement selectDocumentUploadDocumentQuotation = driver1.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.widget.ScrollView/android.widget.FrameLayout/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.view.ViewGroup/android.widget.GridView/android.widget.LinearLayout[3]/android.widget.LinearLayout/android.widget.LinearLayout"));
+        MobileElement selectDocumentUploadDocumentQuotation = driver1.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.widget.ScrollView/android.widget.FrameLayout/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.view.ViewGroup/android.widget.GridView/android.widget.LinearLayout[2]"));
         selectDocumentUploadDocumentQuotation.click();
         Thread.sleep(2000);
 
@@ -379,19 +380,23 @@ public class TestAalf1 {
         buttonUploadDocumentConfirmationLetter.click();
         Thread.sleep(2000);
 
-        MobileElement selectDocumentUploadDocumentConfirmationLetter = driver1.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.widget.ScrollView/android.widget.FrameLayout/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.view.ViewGroup/android.widget.GridView/android.widget.LinearLayout[3]/android.widget.LinearLayout/android.widget.LinearLayout"));
+        MobileElement selectDocumentUploadDocumentConfirmationLetter = driver1.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.widget.ScrollView/android.widget.FrameLayout/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.view.ViewGroup/android.widget.GridView/android.widget.LinearLayout[5]"));
         selectDocumentUploadDocumentConfirmationLetter.click();
         Thread.sleep(2000);
 
-        MobileElement buttonAddNameOfClient = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/cardClient1"));
+        MobileElement buttonAddNameOfClient = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/viewSheetClient"));
         buttonAddNameOfClient.click();
+        Thread.sleep(2000);
+
+        MobileElement selectNameOfClient = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/cardClient1"));
+        selectNameOfClient.click();
         Thread.sleep(2000);
 
         MobileElement inputCaseName = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/tfCaseName"));
         inputCaseName.sendKeys("Pengetesan Automation mobile");
         Thread.sleep(2000);
 
-        MobileElement chooseTypeOfClient = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/"));
+        MobileElement chooseTypeOfClient = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/ddClientType"));
         chooseTypeOfClient.click();
         Thread.sleep(2000);
 
@@ -446,6 +451,14 @@ public class TestAalf1 {
         selectNameOfTeam2.click();
         Thread.sleep(2000);
 
+        MobileElement inputSearchTeam = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/tfSearch"));
+        inputSearchTeam.sendKeys("reza");
+        Thread.sleep(2000);
+
+        MobileElement selectNameOfTeam3 = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/cardTeamHO0"));
+        selectNameOfTeam3.click();
+        Thread.sleep(2000);
+
         MobileElement buttonSelectTeamCreateHo = driver1.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]/android.widget.Button"));
         buttonSelectTeamCreateHo.click();
         Thread.sleep(2000);
@@ -457,5 +470,33 @@ public class TestAalf1 {
         MobileElement buttonConfirmSaveCreateHo = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/btOk"));
         buttonConfirmSaveCreateHo.click();
         Thread.sleep(2000);
+    }
+
+    @AfterMethod
+    public void tearDown() {
+        try {
+            // Assuming the app allows the user to log out
+            MobileElement navbarOther = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/viewOther"));
+            navbarOther.click();
+            Thread.sleep(2000);
+
+            MobileElement buttonLogout = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/btLogout"));
+            buttonLogout.click();
+            Thread.sleep(2000);
+
+            MobileElement buttonConfirmLogout = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/btOk"));
+            buttonConfirmLogout.click();
+            Thread.sleep(2000);
+
+            MobileElement buttonLoginAnotherAccount = driver1.findElement(By.id("com.morfo.sipandaunik_dev:id/txtLoginAnother"));
+            buttonLoginAnotherAccount.click();
+            Thread.sleep(2000);
+
+        } catch (Exception e) {
+            // In case the user was already logged out or the element doesn't exist
+            System.out.println("User was already logged out or error occurred.");
+        } finally {
+            driver1.quit();
+        }
     }
 }
