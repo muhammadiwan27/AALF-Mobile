@@ -448,5 +448,74 @@ public class TestAalf2 {
         MobileElement buttonConfirmSaveCreateHo = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/btOk"));
         buttonConfirmSaveCreateHo.click();
         Thread.sleep(2000);
+
+        //Create Task HO
+        MobileElement hoCard = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/cardHO0"));
+        hoCard.click();
+        Thread.sleep(2000);
+
+        MobileElement buttonAddTask = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/FloatActionButtonTaskCreate"));
+        buttonAddTask.click();
+        Thread.sleep(2000);
+
+        MobileElement buttonNextAddTask = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/btNext"));
+        buttonNextAddTask.click();
+        Thread.sleep(2000);
+
+        MobileElement buttonSelectSowAddTask = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/btSow"));
+        buttonSelectSowAddTask.click();
+        Thread.sleep(2000);
+
+        MobileElement selectLitigasiSowAddTask = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/cardSOW1"));
+        selectLitigasiSowAddTask.click();
+        Thread.sleep(2000);
+
+        MobileElement selectPidanaSowAddTask = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/cardSOW6"));
+        selectPidanaSowAddTask.click();
+        Thread.sleep(2000);
+
+        MobileElement selectKehadiranSidangSowAddTask = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/cardSOW1"));
+        selectKehadiranSidangSowAddTask.click();
+        Thread.sleep(2000);
+
+        MobileElement selectPembuktianAktifSidangSowAddTask = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/cardSOW2"));
+        selectPembuktianAktifSidangSowAddTask.click();
+        Thread.sleep(2000);
+
+        MobileElement inputNoteAddTask = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/tfNote"));
+        inputNoteAddTask.sendKeys("Pengetesan Automation mobile");
+        Thread.sleep(2000);
+
+        MobileElement buttonDateDeadlineAddTask = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/tfDate"));
+        buttonDateDeadlineAddTask.click();
+        Thread.sleep(2000);
+
+        MobileElement selectDateDeadlineAddTask = driver2.findElement(By.id("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[3]/android.view.View[11]/android.widget.TextView[31]/android.widget.Button"));
+        selectDateDeadlineAddTask.click();
+        Thread.sleep(2000);
+
+        MobileElement buttonConfirmDateDeadlineAddTask = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/tbOK"));
+        buttonConfirmDateDeadlineAddTask.click();
+        Thread.sleep(2000);
+
+        MobileElement buttonTimeDeadlineAddTask = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/tfTime"));
+        buttonTimeDeadlineAddTask.click();
+        Thread.sleep(2000);
+
+        MobileElement selectHourDeadlineAddTask = driver2.findElement(By.id("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[2]/android.view.View[4]/android.view.View[19]"));
+        selectHourDeadlineAddTask.click();
+        Thread.sleep(2000);
+
+        MobileElement selectMinuteDeadlineAddTask = driver2.findElement(By.id("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[2]/android.view.View[4]/android.view.View[9]"));
+        selectMinuteDeadlineAddTask.click();
+        Thread.sleep(2000);
+
+        MobileElement buttonConfirmTimeDeadlineAddTask = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/tbOK"));
+        buttonConfirmTimeDeadlineAddTask.click();
+        Thread.sleep(2000);
+
+        MobileElement buttonUploadTaskPhotoAddTask = driver2.findElement(By.id("com.morfo.sipandaunik_dev:id/btUploadPhoto"));
+        buttonUploadTaskPhotoAddTask.click();
+        Thread.sleep(2000);
     }
 }
